@@ -1,31 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chang-le <chang-le@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 14:26:06 by chang-le          #+#    #+#             */
-/*   Updated: 2020/07/16 11:57:13 by chang-le         ###   ########.fr       */
+/*   Created: 2020/07/16 18:39:22 by chang-le          #+#    #+#             */
+/*   Updated: 2020/07/16 21:14:32 by chang-le         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_print_comb2(void);
 
-void	recursive(char c)
+int		main(void)
 {
-	if (c == 58)
-	{
-		return ;
-	}
-	write(1, &c, 1);
-	recursive(c + 1);
-}
-
-void	ft_print_numbers(void)
-{
-	char	c;
-
-	c = 48;
-	recursive(c);
+	ft_print_comb2();
+	return (0);
 }
