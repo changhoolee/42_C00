@@ -6,7 +6,7 @@
 /*   By: chang-le <chang-le@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/18 13:17:41 by chang-le          #+#    #+#             */
-/*   Updated: 2020/07/18 18:44:43 by chang-le         ###   ########.fr       */
+/*   Updated: 2020/07/18 20:15:58 by chang-le         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ void ft_print_comb2(void)
 
 	while (ff < 58)
 	{
-		//fb = '0';
+		if (fb > '9')
+			ff = '1';
 		while (fb < 58) 
 		{
 			ft_back(ff, fb, bf, bb);
